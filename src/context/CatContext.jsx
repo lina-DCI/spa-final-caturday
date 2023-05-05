@@ -5,10 +5,11 @@ export const CatContext = createContext();
 export const CatAppProvider = ({ children }) => {
     const [catFact, setCatFact] = useState([]);
     const [allowFetch, setAllowFetch] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
     const getCatFact = () => {
         const url = "https://catfact.ninja/fact";
-       
+       setIsLoading(true);
         (async () => {
             try {
                 const response = await fetch(url);
@@ -23,6 +24,7 @@ export const CatAppProvider = ({ children }) => {
 
     useEffect(() => { allowFetch&&
         (getCatFact(),
+        setIsLoading(false),
         setAllowFetch(false))
     }, [allowFetch]);
 
