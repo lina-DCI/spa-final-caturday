@@ -1,23 +1,33 @@
 #root {
-    max-width: 1280px;
+    /* max-width:  600px !important; */
     text-align: center;
     display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+
+    /* max-width: 600px !important; */
 }
 a {
     font-weight: 500;
-    color: #73ff64;
+    color: #e3365e;
     text-decoration: inherit;
 }
 a:hover {
-    color: #f253e2;
+    color: #f2536b;
 }
 
 .navbar-container {
     position: fixed;
     width: 100vw;
     top: 0px;
-    margin-left: 10px;
-    padding-top: 10px;
+    left: 0px;
+    box-shadow: 0 0.4rem 0.4rem rgba(35, 35, 35, 0.118);
+    padding: 10px 20px;
     display: flex;
     align-content: space-between;
     background-color: #fff;
@@ -47,20 +57,28 @@ a:hover {
     font-weight: 700;
     align-items: center;
     padding: 0 0.5rem;
-    color: grey;
+    color: #97aeae;
 }
 .active {
-    color: rgb(194, 46, 53);
+    color: #ea5959;
 }
 .main-container {
     width: 90vw;
-    margin: 0 auto;
-    margin-top: 1.2rem;
+    height: 90vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem auto;
 }
 .card {
-    min-width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+    width: 80%;
     min-height: 15vh;
-    border: dotted 5px maroon;
+    max-height: 80vh;
+    border: dotted 3px #d07b7b;
+    background-color: #ffffff;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     font-weight: 600;
@@ -68,44 +86,52 @@ a:hover {
     padding: 2em;
 }
 .cat-card {
-    width: 80vw;
-    height: 70vh;
+    width: 80%;
+    height: 75vh;
     margin: 0 auto;
 }
 .cat-card img {
+    border: solid 7px #fff;
     object-fit: cover;
-    height: 70vh;
-}
+    height: 73vh;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.322);}
 
 h1 {
-    font-size: 2.2em;
-    line-height: 1.1;
+    font-size: 2em;
+    margin-top: 1rem;
+    color: rgb(67, 96, 96);;
 }
 
 button {
-    margin: 1em;
+    margin: 1.5rem auto;
     border-radius: 4rem;
     width: 7rem;
-    height: 4rem;
+    height: 3rem;
     border: 2px solid transparent;
     padding: 0.3rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     font-family: inherit;
     color: #ffffff;
-    background-color: #c16363;
+    background-color: #ea5959;
     cursor: pointer;
     transition: border-color 0.25s;
 }
 button:hover {
-    background-color: #9d0848;
+    background-color: #da3d3d;
 }
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-
-
-footer { margin-top: 2rem; width: 100vw;}
-
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 1rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    width: 100%;
+    color: rgb(101, 117, 117);
+    font-weight: 600;
+}

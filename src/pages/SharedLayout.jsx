@@ -4,9 +4,11 @@ import Navbar from "../components/Navbar";
 const SharedLayout = () => {
     return (
         <>
-            <Navbar /> 
+            <Navbar />
             <Outlet />
-            <footer>&copy;2023 Because every Day is Caturday</footer>
+            <footer>
+                <div className="footer-text">&copy;2023 Because every Day is Caturday</div>
+            </footer>
         </>
     );
 };
