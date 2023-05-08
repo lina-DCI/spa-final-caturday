@@ -20,40 +20,11 @@
 
 body {
     margin: 0;
-    display: flex;
+    /* display: flex; */
     flex-flow: column wrap;
-    min-width: 320px;
+    min-width: 600px;
     min-height: 100vh;
 }
-
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-}
-
-button {
-    margin: 1em;
-    border-radius: 4rem;
-    width: 8rem;
-    height: 5rem;
-    border: 2px solid transparent;
-    padding: 0.5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    font-family: inherit;
-    color: #ffffff;
-    background-color: #c16363;
-    cursor: pointer;
-    transition: border-color 0.25s;
-}
-button:hover {
-    background-color: #9d0848;
-}
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
-
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;
