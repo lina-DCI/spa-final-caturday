@@ -12,7 +12,7 @@ const Navbar = () => {
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            {isActive ? "link active" : "link"}
+                            isActive ? "link active" : "link"
                         }
                     >
                         Home
@@ -31,7 +31,7 @@ const Navbar = () => {
                             isActive ? "link active" : "link"
                         }
                     >
-                        Wich Cat Breed are You?
+                        Which Cat Breed are You?
                     </NavLink>
                 </div>
             </div>

@@ -4,7 +4,7 @@ export const CatContext = createContext();
 
 export const CatAppProvider = ({ children }) => {
     const [catFact, setCatFact] = useState([]);
-   
+
     const [allowFetch, setAllowFetch] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -24,15 +24,16 @@ export const CatAppProvider = ({ children }) => {
     };
 
     useEffect(() => {
-        allowFetch && getCatFact(); setIsLoading(false); setAllowFetch(false);
+        allowFetch && getCatFact();
+        setIsLoading(false);
+        setAllowFetch(false);
     }, [allowFetch]);
 
-// get cat of the day
-const [cat, setCat] =useState([]);
-const [allowCat, setAllowCat] = useState(true)
+    // get cat of the day
+    const [cat, setCat] = useState([]);
+    const [allowCat, setAllowCat] = useState(true);
     const getCat = () => {
-       
-        const url = "https://api.thecatapi.com/v1/images/search" ;
+        const url = "https://api.thecatapi.com/v1/images/search";
         setIsLoading(true);
         (async () => {
             try {
@@ -46,12 +47,22 @@ const [allowCat, setAllowCat] = useState(true)
         })();
     };
     useEffect(() => {
-        allowCat && getCat(); setIsLoading(false); setAllowCat(false);
+        allowCat && getCat();
+        setIsLoading(false);
+        setAllowCat(false);
     }, [allowCat]);
 
     return (
         <CatContext.Provider
-            value={{ isLoading, cat, catFact, allowCat, setAllowCat, allowFetch, setAllowFetch }}
+            value={{
+                isLoading,
+                cat,
+                catFact,
+                allowCat,
+                setAllowCat,
+                allowFetch,
+                setAllowFetch,
+            }}
         >
             {children}
         </CatContext.Provider>
