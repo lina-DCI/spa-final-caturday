@@ -27,7 +27,6 @@ body {
   margin: 0;
   display: flex;
   flex-flow: column wrap;
-  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -47,7 +46,8 @@ button {
   font-size: 1.4rem;
   font-weight: 700;
   font-family: inherit;
-  background-color: #1a1a1a;
+  color: #ffffff;
+  background-color: #c16363;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -65,11 +65,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #ff74f3;
   }
-  button {
-    color: #ffffff;
-    background-color: #c16363;
-   
-  }
+
 }

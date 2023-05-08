@@ -12,15 +12,13 @@ function App() {
             <CatAppProvider>
                 <Navbar />
                 <Routes>
-                   
                     <Route path="/" element={<Homepage />} />
                     <Route path="/cat-of-the-day" element={<CatOfTheDay />} />
-                    <Route path="/which-cat-breed-are-you" element={ <WhichCatAreYou />} />
-
+                    <Route
+                        path="/which-cat-breed-are-you"
+                        element={<WhichCatAreYou />}
+                    />
                 </Routes>
-                <h1>Test Caturday</h1>
-
-               
             </CatAppProvider>
         </BrowserRouter>
     );
