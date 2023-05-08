@@ -24,14 +24,14 @@ export const CatAppProvider = ({ children }) => {
     };
 
     useEffect(() => {
-        allowFetch && (getCatFact(), setIsLoading(false), setAllowFetch(false));
+        allowFetch && getCatFact(); setIsLoading(false); setAllowFetch(false);
     }, [allowFetch]);
 
 // get cat of the day
 const [cat, setCat] =useState([]);
 const [allowCat, setAllowCat] = useState(true)
     const getCat = () => {
-        // const apiKey="live_6Ums4xO5rEt68IfT6ljKBEbc0raJdoAtggXG05uD07Em9HUYeS5cLVbpsqNUzzwi";
+       
         const url = "https://api.thecatapi.com/v1/images/search" ;
         setIsLoading(true);
         (async () => {
@@ -46,7 +46,7 @@ const [allowCat, setAllowCat] = useState(true)
         })();
     };
     useEffect(() => {
-        allowCat && (getCat(), setIsLoading(false), setAllowCat(false));
+        allowCat && getCat(); setIsLoading(false); setAllowCat(false);
     }, [allowCat]);
 
     return (

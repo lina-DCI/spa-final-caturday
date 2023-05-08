@@ -6,11 +6,11 @@ export default function Homepage() {
     if (isLoading) return <div className="card">Loading...</div>;
     else {
         return (
-            <>
+            <div className="main-container">
                 <h1>Cat Fact of the Day</h1>
                 <div className="card">{catFact}</div>
                 <button onClick={() => setAllowFetch(true)}>New Fact</button>
-            </>
+            </div>
         );
     }
 }

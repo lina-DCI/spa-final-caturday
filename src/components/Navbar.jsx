@@ -1,4 +1,4 @@
-import React from "react";
+
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            isActive ? "link active" : "link"
+                            {isActive ? "link active" : "link"}
                         }
                     >
                         Home
