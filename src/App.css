@@ -45,6 +45,7 @@ a:hover {
     align-content: space-between;
 }
 .link {
+    font-weight: 700;
     align-items: center;
     padding: 0 0.5rem;
     color: grey;
