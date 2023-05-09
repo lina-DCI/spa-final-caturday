@@ -4,7 +4,7 @@ import { CatContext } from "../context/CatContext";
 const CatOfTheDay = () => {
     const { cat, setAllowCat, isLoading } = useContext(CatContext);
 
-    if (isLoading) return <div className="cat-card">Loading...</div>;
+    if (isLoading) return <div className="cat-card"><h3>Loading...</h3></div>;
     else {
         return (
             <div className="main-container">

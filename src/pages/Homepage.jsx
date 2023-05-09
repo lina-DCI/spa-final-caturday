@@ -7,7 +7,8 @@ export default function Homepage() {
     else {
         return (
             <div className="main-container">
-                <h1>Cat Fact of the Day</h1>
+                <h1>Cat Fact of the Day</h1><div className="cat-illustration">
+                <img width="200" src="./src/assets/cat-159653.svg" alt="cat" /></div>
                 <div className="card">{catFact}</div>
                 <button onClick={() => setAllowFetch(true)}>New Fact</button>
             </div>
