@@ -127,6 +127,7 @@ h1 {
     font-size: 2em;
     margin-top: 1rem;
     color: rgb(67, 96, 96);
+    letter-spacing: -0.3px;
 }
 
 button {
