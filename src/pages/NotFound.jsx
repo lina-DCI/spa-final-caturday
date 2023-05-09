@@ -4,7 +4,7 @@ export default function NotFound() {
             <h1>Not Found</h1>
             <div className="cat-card">
                 <img
-                    src="./src/assets/cat_oopsies.jpeg"
+                    src="images/cat_oopsies.jpeg"
                     alt="something went wrong"
                 />
             </div>
