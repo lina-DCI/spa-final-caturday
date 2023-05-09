@@ -170,7 +170,7 @@ footer {
         overflow: auto;
     } */
     .cat-illustration img{
-        width: 350px;
+        width: 250px;
        }
 }
 @media (min-width: 992px) {
@@ -181,6 +181,6 @@ footer {
         overflow: auto;
     } */
     .cat-illustration img{
-        width: 400px;
+        width: 300px;
        }
   }
