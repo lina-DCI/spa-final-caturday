@@ -25,14 +25,14 @@ const Navbar = () => {
                     >
                         Cat of the Day
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                         to="/which-cat-breed-are-you"
                         className={({ isActive }) =>
                             isActive ? "link active" : "link"
                         }
                     >
                         Which Cat Breed are You?
-                    </NavLink>
+                    </NavLink> */}
                 </div>
             </div>
         </nav>

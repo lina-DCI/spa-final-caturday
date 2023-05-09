@@ -4,7 +4,7 @@ import { CatContext } from "../context/CatContext";
 const CatOfTheDay = () => {
     const { cat, setAllowCat, isLoading } = useContext(CatContext);
 
-    if (isLoading) return <div className="cat-card"><h3>Loading...</h3></div>;
+    if (isLoading) return <div className="cat-card"><img src="./src/assets/cat-159653.svg" width="200"  alt="Image is Loading"/></div>;
     else {
         return (
             <div className="main-container">

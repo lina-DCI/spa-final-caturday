@@ -163,4 +163,15 @@ footer {
     body {
         min-width: 768px;
     }
+    .card {
+        overflow: auto;
+    }
 }
+@media (min-width: 992px) {
+    body {
+        min-width: 992px;
+    }
+    .card {
+        overflow: auto;
+    }
+  }

@@ -3,7 +3,7 @@ import { CatAppProvider } from "./context/CatContext";
 import Navbar from "./components/Navbar";
 import CatOfTheDay from "./pages/CatOfTheDay";
 import Homepage from "./pages/Homepage";
-import WhichCatAreYou from "./pages/WhichCatAreYou";
+// import WhichCatAreYou from "./pages/WhichCatAreYou";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SharedLayout from "./pages/SharedLayout";
 
@@ -19,10 +19,10 @@ function App() {
                             path="/cat-of-the-day"
                             element={<CatOfTheDay />}
                         />
-                        <Route
+                        {/* <Route
                             path="/which-cat-breed-are-you"
                             element={<WhichCatAreYou />}
-                        />
+                        /> */}
                     </Route>
                 </Routes>
             </CatAppProvider>
