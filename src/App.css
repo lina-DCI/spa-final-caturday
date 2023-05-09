@@ -50,13 +50,14 @@ a:hover {
 }
 .nav-title-text h3 {
     padding: 0;
-    margin: 0;
+    padding-right: 1rem;
     font-weight: 500;
 }
 .nav-links-container {
-    min-width: 600px;
+    min-width: 400px;
     display: flex;
     align-content: space-between;
+    margin-left: 0.5rem;
 }
 .link {
     font-weight: 700;
@@ -69,7 +70,7 @@ a:hover {
 }
 .main-container {
     width: 95vw;
-    max-height: 120vh;
+    max-height: 100vh;
     min-height: 80vh;
     display: flex;
     flex-flow: column nowrap;
@@ -83,15 +84,19 @@ a:hover {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    margin: 1.3rem;
+    margin:0 0 0.8rem 0;
+}
+.cat-illustration img{
+ width: 200px;
 }
 .card {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
+    /* align-items: center; */
     width: 80%;
     min-height: 10vh;
-    max-height: 70vh;
+    max-height: 50vh !important;
     border: dotted 3px #d07b7b;
     background-color: #ffffff;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -99,7 +104,7 @@ a:hover {
     font-weight: 600;
     font-size: 1.3rem;
     padding: 1.5rem;
-    overflow: scroll;
+    overflow: auto;
 }
 .cat-card {
     display: flex;
@@ -110,8 +115,6 @@ a:hover {
     /* margin: 0 auto; */
 }
 .cat-card img {
-    /* min-width: 20%;
-    background-color: #fff; */
     border: solid 0.4rem #fff;
     object-fit: cover;
     max-height: 72vh;
@@ -163,15 +166,21 @@ footer {
     body {
         min-width: 768px;
     }
-    .card {
+    /* .card {
         overflow: auto;
-    }
+    } */
+    .cat-illustration img{
+        width: 350px;
+       }
 }
 @media (min-width: 992px) {
     body {
         min-width: 992px;
     }
-    .card {
+    /* .card {
         overflow: auto;
-    }
+    } */
+    .cat-illustration img{
+        width: 400px;
+       }
   }

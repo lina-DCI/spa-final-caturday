@@ -6,6 +6,7 @@ import Homepage from "./pages/Homepage";
 // import WhichCatAreYou from "./pages/WhichCatAreYou";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SharedLayout from "./pages/SharedLayout";
+import NotFound from "./pages/NotFound";
 
 function App() {
     return (
@@ -18,6 +19,10 @@ function App() {
                         <Route
                             path="/cat-of-the-day"
                             element={<CatOfTheDay />}
+                        />
+                           <Route
+                            path="*"
+                            element={<NotFound />}
                         />
                         {/* <Route
                             path="/which-cat-breed-are-you"
