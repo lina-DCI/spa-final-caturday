@@ -94,7 +94,7 @@ a:hover {
 .card {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     /* align-items: center; */
     width: 80%;
     min-height: 10vh;
@@ -113,8 +113,8 @@ a:hover {
     flex-flow: column nowrap;
     justify-content: center;
     max-width: 100%;
-    max-height: 70vh;
-    /* margin: 0 auto; */
+    max-height: 50vh;
+   
 }
 .cat-card img {
     border: solid 0.4rem #fff;
