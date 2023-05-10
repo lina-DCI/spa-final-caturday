@@ -33,6 +33,7 @@ a:hover {
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    align-content: center;
     background-color: #fff;
     font-size: 1rem;
 }
@@ -62,7 +63,6 @@ a:hover {
 }
 .link {
     font-weight: 700;
-    align-items: center;
     padding: 0 0.9rem;
     color: #97aeae;
     word-spacing: -1px;
