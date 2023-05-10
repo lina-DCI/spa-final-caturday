@@ -32,18 +32,19 @@ a:hover {
     box-shadow: 0 0.4rem 0.4rem rgba(35, 35, 35, 0.118);
     padding: 10px 20px;
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
     background-color: #fff;
+    font-size: 1rem;
 }
 .nav-title {
     display: flex;
-    width: 200px;
+    /* width: 200px; */
 }
 
 .nav-title-text {
-    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
     margin: 0;
     color: rgb(96, 129, 128);
@@ -54,16 +55,17 @@ a:hover {
     font-weight: 500;
 }
 .nav-links-container {
-    min-width: 400px;
+    /* min-width: 400px; */
     display: flex;
-    align-content: space-between;
-    margin-left: 0.5rem;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
 }
 .link {
     font-weight: 700;
     align-items: center;
-    padding: 0 0.5rem;
+    padding: 0 0.9rem;
     color: #97aeae;
+    word-spacing: -1px;
 }
 .active {
     color: #ea5959;
@@ -131,6 +133,7 @@ h1 {
 }
 
 button {
+    appearance: none;
     margin: 1.5rem auto;
     border-radius: 4rem;
     width: 7rem;
@@ -146,12 +149,13 @@ button {
     transition: border-color 0.25s;
 }
 button:hover {
+    
     background-color: #da3d3d;
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 footer {
     display: flex;
