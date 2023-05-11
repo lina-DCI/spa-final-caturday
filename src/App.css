@@ -81,6 +81,16 @@ a:hover {
     padding: 1rem;
     margin: 2rem auto 1rem auto;
 }
+.oopsie { width: 95vw;
+    max-height: 100vh;
+    min-height: 80vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem auto 1rem auto;}
+
 .cat-illustration {
     display: flex;
     flex-flow: column nowrap;
@@ -182,10 +192,23 @@ footer {
     body {
         min-width: 992px;
     }
-    /* .card {
-        overflow: auto;
-    } */
+   
     .cat-illustration img{
         width: 300px;
        }
+       .cat-card {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        max-width: 100%;
+        max-height: 66vh !important;
+       
+    }
+    .cat-card img {
+        border: solid 0.4rem #fff;
+        object-fit: cover;
+        max-height: 67vh;
+        max-width: 99vw;
+        box-shadow: 0 3px 30px rgba(0, 0, 0, 0.322);
+    }
   }
